@@ -1,0 +1,163 @@
+.carousel {
+  background-color: #0A3A2F;
+  color: #FFFFFF;
+  padding: 32px 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carousel__header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.carousel__label {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: #0E4D3E;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  border: 2px solid #FFD700;
+}
+.carousel__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  font-family: "Recoleta", serif;
+}
+.carousel__container {
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.carousel__track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.carousel__slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 16px;
+}
+@media (min-width: 768px) {
+  .carousel__slide {
+    flex: 0 0 calc(33.333% - 32px);
+    max-width: calc(33.333% - 32px);
+  }
+}
+.carousel__card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 24px;
+  color: #333333;
+  transition: transform 0.3s ease;
+}
+.carousel__card:hover {
+  transform: translateY(-5px);
+}
+.carousel__profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.carousel__profile-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px;
+}
+.carousel__name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+}
+.carousel__stars {
+  color: #FFD700;
+  font-size: 1rem;
+}
+.carousel__age {
+  font-size: 0.875rem;
+  margin-bottom: 16px;
+}
+.carousel__text {
+  margin: 0;
+  line-height: 1.5;
+}
+.carousel__navigation {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.carousel__nav {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #0E4D3E;
+  color: #FFFFFF;
+  transition: background-color 0.3s ease;
+}
+.carousel__nav:hover {
+  background-color: rgb(6.1538461538, 33.8461538462, 27.2527472527);
+}
+.carousel__nav svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .carousel__container {
+    overflow: visible;
+  }
+  .carousel__track {
+    margin: 0 -16px;
+  }
+  .carousel__slide {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+  .carousel__slide--active {
+    opacity: 1;
+  }
+  .carousel__slide:first-child .carousel__card, .carousel__slide:last-child .carousel__card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 1024px) {
+  .carousel__title {
+    font-size: 3rem;
+  }
+  .carousel__container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0A3A2F;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.carousel {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  padding: 24px 0;
+}
+
+/*# sourceMappingURL=main.css.map */
