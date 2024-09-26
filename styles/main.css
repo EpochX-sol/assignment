@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@font-face {
+  font-family: "Recoleta";
+  src: url("../assets/fonts/Recoleta-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .carousel {
   background-color: #0A3A2F;
   color: #FFFFFF;
@@ -55,11 +62,14 @@
   padding: 24px;
   color: #333333;
   transition: transform 0.3s ease;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
 }
 .carousel__card:hover {
   transform: translateY(-5px);
 }
-.carousel__profile {
+.carousel__card-header {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
@@ -71,27 +81,37 @@
   object-fit: cover;
   margin-right: 16px;
 }
+.carousel__profile-info {
+  display: flex;
+  flex-direction: column;
+}
 .carousel__name {
   font-size: 1.25rem;
   font-weight: bold;
   margin: 0;
+  line-height: 1.2;
 }
 .carousel__stars {
   color: #FFD700;
   font-size: 1rem;
+  line-height: 1;
+  margin-top: 2px;
 }
 .carousel__age {
   font-size: 0.875rem;
-  margin-bottom: 16px;
+  margin: 2px 0 0;
+  color: rgba(51, 51, 51, 0.7);
 }
 .carousel__text {
   margin: 0;
   line-height: 1.5;
+  flex-grow: 1;
 }
 .carousel__navigation {
   display: flex;
   justify-content: center;
   gap: 16px;
+  margin-top: 20px;
 }
 .carousel__nav {
   background: none;

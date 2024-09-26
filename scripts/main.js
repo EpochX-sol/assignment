@@ -36,7 +36,7 @@ const testimonials = [
         image: '/assets/profile.png'
     },
     {
-        id: 4,
+        id: 5,
         name: 'Esther',
         age: 39,
         rating: 5,
@@ -44,7 +44,7 @@ const testimonials = [
         image: '/assets/profile.png'
     },
     {
-        id: 4,
+        id: 6,
         name: 'Esther',
         age: 39,
         rating: 5,
@@ -52,7 +52,7 @@ const testimonials = [
         image: '/assets/profile.png'
     },
     {
-        id: 4,
+        id: 7,
         name: 'Esther',
         age: 39,
         rating: 5,
@@ -60,7 +60,7 @@ const testimonials = [
         image: '/assets/profile.png'
     },
     {
-        id: 4,
+        id: 8,
         name: 'Esther',
         age: 39,
         rating: 5,
@@ -68,7 +68,7 @@ const testimonials = [
         image: '/assets/profile.png'
     },
     {
-        id: 4,
+        id: 9,
         name: 'Esther',
         age: 39,
         rating: 5,
